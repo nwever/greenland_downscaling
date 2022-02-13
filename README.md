@@ -35,6 +35,11 @@ Run: ./meteoio/bin/meteoio_timeseries -c io_createsmet.ini -b 2010-08-01T00:00 -
 This generates a *smet file for each grid point
 Takes ~20 seconds
 
+-- Alternatively: --
+The file to_exec.lst contains a list of commands to generate the grids year-by-year.
+1) Run in parallel by executing: parallel < to_exec.lst
+2) On HPC systems, use the job manager script job.sbatch, which will execute to_exec.lst in parallel using job arrays.
+
 Step 4:
 =======
 Run: bash correct_smet_files.sh
