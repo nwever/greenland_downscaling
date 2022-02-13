@@ -1,0 +1,3 @@
+[submodule "meteoio"]
+	path = meteoio
+	url = https://gitlabext.wsl.ch/snow-models/meteoio.git
